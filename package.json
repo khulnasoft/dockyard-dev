@@ -62,7 +62,6 @@
     "@types/ssh2": "^1.15.0",
     "@types/sshpk": "^1.17.4",
     "@types/uuid": "^9.0.8",
-    "@volar/typescript": "^2.4.5",
     "@vueuse/nuxt": "^10.9.0",
     "nuxi": "^3.11.1",
     "rollup": "^4.14.3",
