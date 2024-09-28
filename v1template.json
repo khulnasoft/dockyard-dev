@@ -1,0 +1,33 @@
+[
+  {
+    "type": 1,
+    "title": "Dockyard Nuxt",
+    "name": "dockyard-dev",
+    "description": "dockyard alpha",
+    "logo": "https://raw.githubusercontent.com/khulnasoft/dockyard-dev/main/public/icons/dockyard/mini.svg",
+    "image": "ghcr.io/khulnasoft/dockyard-dev:main",
+    "note": "Dockyard app template",
+    "categories": [
+      "System Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "3020:3000/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "!config/dockyard_nuxt/config"
+      },
+      {
+        "container": "/data",
+        "bind": "!config/dockyard_nuxt/data"
+      },
+      {
+        "container": "/var/run/docker.sock",
+        "bind": "/var/run/docker.sock"
+      }
+    ]
+  }
+]
